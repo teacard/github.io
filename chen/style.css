@@ -1,0 +1,70 @@
+body{
+    min-width:1000px;/*最小縮小大小*/
+    background-repeat: no-repeat;/*背景圖不重複*/
+    background-size: cover;/*背景圖放大至網頁大小*/
+}
+/*背景設定*/
+section {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: auto;/*自動調整高.寬*/
+    height: auto;
+    margin: 25px 250px;/*向右.下偏移*/
+    border-radius: 10px;/*邊邊圓滑*/
+}
+/*logo設定*/
+.logo{
+    width: 100px;
+    height: 20px;
+    margin: 20px;/*向右偏移*/
+}
+/*列表文字顏色動畫*/
+@keyframes change-color {
+    from{color: black;}
+    to{color: white;}
+}
+/*列表盒子設定*/
+.menubox{
+    display: flex;/*盒子布局*/
+    margin-top: 50px;/*往下*/
+    margin-left: 5%;/*往右*/
+    width: 90%;/*section的90%*/
+    height: 30px;
+}
+/*盒子內的列表選項(滑鼠接觸觸發)*/
+.menubox a:hover{
+    background-color: black;
+    animation-name: change-color;/*動畫名稱*/
+    animation-duration: 0.5s;/*0.5秒動畫*/
+    color: white;/*字體顏色*/
+}
+/*列表設定*/
+.menubox a{
+    flex: 1;/*平均分配盒子大小*/
+    font-size: 20px;/*字型大小*/
+    width: 100%;/*對盒子的寬占比*/
+    height: 100%;
+    border: 1px solid black;/*邊線*/
+    text-align: center;/*水平置中*/
+    color: black;/*字體顏色*/
+    
+}
+/*我的興趣*/
+.mylike{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 75%;
+    height: auto;
+    margin-top: 15px;
+    margin-left: 12.5%;
+    border-radius: 20px;
+}
+/*興趣標題*/
+.myliketitle{
+    font-size: 40px;/*字型大小*/
+    font-weight: bolder;/*字型粗度*/
+}
+
+
+.QA{
+    font-size:30px;
+    font-weight: bold;
+}
